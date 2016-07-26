@@ -5,6 +5,7 @@ from django.views.generic import ListView, DetailView, View
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 from .models import Choice, Question
+from two_factor.mixins import TwoFactorMixin
 
 class IndexView(ListView):
     template_name = 'polls/index.html'
@@ -13,17 +14,17 @@ class IndexView(ListView):
     def get_queryset(self):
         return Question.objects.order_by('-pub_date')[:5]
 
-class OptionsView(LoginRequiredMixin, DetailView):
+class OptionsView(TwoFactorMixin, DetailView):
     login_url = '/login/'
     model = Question
     template_name = 'polls/detail.html'
 
-class ResultsView(LoginRequiredMixin, DetailView):
+class ResultsView(TwoFactorMixin, DetailView):
     login_url = '/login/'
     model = Question
     template_name = 'polls/results.html'
 
-class VoteView(LoginRequiredMixin,View):
+class VoteView(TwoFactorMixin,View):
     def post(self, request, question_id):
         question = get_object_or_404(Question, pk=question_id)
         try:

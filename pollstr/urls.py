@@ -21,5 +21,6 @@ urlpatterns = [
     url(r'^$', redirect_root),
     url('^', include('django.contrib.auth.urls')),
     url(r'^polls/', include('polls.urls')),
+    url(r'^2fa/', include('two_factor.urls')),
     url(r'^admin/', admin.site.urls),
 ]
