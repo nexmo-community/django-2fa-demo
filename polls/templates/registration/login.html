@@ -1,0 +1,32 @@
+{% extends "polls/base.html" %}
+
+{% block content %}
+
+    {% if form.errors %}
+    <div class="alert alert-warning" role="alert">Your username and password didn't match. Please try again.</div>
+    {% endif %}
+
+    <form class='form-horizontal' method="post" action="{% url 'django.contrib.auth.views.login' %}">
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ next }}" />
+
+        <div class="form-group">
+          <label for="id_username" class='control-label col-sm-2'>Username:</label>
+          <div class="col-sm-10">
+            <input id="id_username" maxlength="254" name="username" type="text" class='form-control'/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="id_password" class='control-label col-sm-2'>Password:</label>
+          <div class="col-sm-10">
+            <input id="id_password" name="password" type="password" class='form-control' />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </div>
+     </form>
+{% endblock %}

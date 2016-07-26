@@ -1,0 +1,156 @@
+[
+    {
+        "model":"polls.question",
+        "pk":1,
+        "fields":{
+            "question_text":"What is your favorite kind of dog?",
+            "pub_date":"2016-07-25T12:54:24Z"
+        }
+    },
+    {
+        "model":"polls.choice",
+        "pk":1,
+        "fields":{
+            "question":1,
+            "choice_text":"A beagle",
+            "votes":0
+        }
+    },
+    {
+        "model":"polls.choice",
+        "pk":2,
+        "fields":{
+            "question":1,
+            "choice_text":"A golden retriever",
+            "votes":0
+        }
+    },
+    {
+        "model":"polls.choice",
+        "pk":3,
+        "fields":{
+            "question":1,
+            "choice_text":"A cat",
+            "votes":0
+        }
+    },
+    {
+        "model":"polls.choice",
+        "pk":4,
+        "fields":{
+            "question":1,
+            "choice_text":"I can't choose!",
+            "votes":0
+        }
+    },
+    {
+        "model":"auth.user",
+        "pk":1,
+        "fields":{
+            "password":"pbkdf2_sha256$24000$rk8toKlZt2vr$dsOOeY/jjjwYLqkmaT5gcRYSrtFabI+eZVgbPylP9EA=",
+            "last_login":"2016-07-25T12:53:18.635Z",
+            "is_superuser":true,
+            "username":"test",
+            "first_name":"",
+            "last_name":"",
+            "email":"test@example.com",
+            "is_staff":false,
+            "is_active":true,
+            "date_joined":"2016-07-25T12:46:43.844Z",
+            "groups":[
+
+            ],
+            "user_permissions":[
+
+            ]
+        }
+    },
+    {
+        "model":"polls.question",
+        "pk":2,
+        "fields":{
+            "question_text":"Who let the dogs out?",
+            "pub_date":"2016-07-25T12:54:24Z"
+        }
+    },
+    {
+        "model":"polls.choice",
+        "pk":5,
+        "fields":{
+            "question":2,
+            "choice_text":"I did",
+            "votes":0
+        }
+    },
+    {
+        "model":"polls.choice",
+        "pk":6,
+        "fields":{
+            "question":2,
+            "choice_text":"You did",
+            "votes":0
+        }
+    },
+    {
+        "model":"polls.choice",
+        "pk":7,
+        "fields":{
+            "question":2,
+            "choice_text":"A cat did",
+            "votes":0
+        }
+    },
+    {
+        "model":"polls.choice",
+        "pk":8,
+        "fields":{
+            "question":2,
+            "choice_text":"The Baha Men",
+            "votes":0
+        }
+    },
+    {
+        "model":"polls.question",
+        "pk":3,
+        "fields":{
+            "question_text":"What's up dog?",
+            "pub_date":"2016-07-25T12:54:24Z"
+        }
+    },
+    {
+        "model":"polls.choice",
+        "pk":9,
+        "fields":{
+            "question":3,
+            "choice_text":"Nothing",
+            "votes":0
+        }
+    },
+    {
+        "model":"polls.choice",
+        "pk":10,
+        "fields":{
+            "question":3,
+            "choice_text":"I'm OK!",
+            "votes":0
+        }
+    },
+    {
+        "model":"polls.choice",
+        "pk":11,
+        "fields":{
+            "question":3,
+            "choice_text":"Up, down, all the same to me",
+            "votes":0
+        }
+    },
+    {
+        "model":"polls.choice",
+        "pk":12,
+        "fields":{
+            "question":3,
+            "choice_text":"It's rabbit huntung season!",
+            "votes":0
+        }
+    }
+]
