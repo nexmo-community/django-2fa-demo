@@ -4,6 +4,10 @@ A demo that implements 2-factor-authentication in Django using the built in auth
 
 ![Django 2FA](docs/demo.gif)
 
+## Read the tutorial
+
+For a more in-depth walk-through make sure you read the full tutorial on our blog; [Add Two factor Authentication to your Django app with Nexmo](https://www.nexmo.com/blog/2017/07/13/2-factor-authentication-sms-voice-django-dr/), or read more about the [Nexmo Verify API on our developer site](https://developer.nexmo.com/verify/overview)
+
 
 ## Basic Login - before branch
 
