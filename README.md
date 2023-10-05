@@ -1,5 +1,7 @@
 # Two Factor Authentication with Django and Nexmo Verify
 
+## ❗❗❗ **This repo is now deprecated. Check the [Vonage Developer Blog](https://developer.vonage.com/en/blog) for more blog posts and tutorials. For more sample Vonage projects, check the [Vonage Community GitHub repo](https://github.com/Vonage-Community).**
+
 A demo that implements 2-factor-authentication in Django using the built in auth framework and the [Nexmo Verify API](https://www.nexmo.com/products/verify/).
 
 ![Django 2FA](docs/demo.gif)
